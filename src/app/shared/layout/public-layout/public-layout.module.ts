@@ -1,13 +1,13 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { PublicLayoutComponent } from './public-layout.component';
+import {NgModule} from '@angular/core';
+import {PublicLayoutComponent} from './public-layout.component';
 import {RouterModule} from '@angular/router';
-import { PublicLayoutHeaderComponent } from './public-layout-header/public-layout-header.component';
-import { PublicLayoutFooterComponent } from './public-layout-footer/public-layout-footer.component';
+import {PublicLayoutHeaderComponent} from './public-layout-header/public-layout-header.component';
+import {PublicLayoutFooterComponent} from './public-layout-footer/public-layout-footer.component';
+import {SharedModule} from '../../shared.module';
 
 @NgModule({
   imports: [
-    CommonModule,
+    SharedModule,
     RouterModule,
   ],
   declarations: [PublicLayoutComponent, PublicLayoutHeaderComponent, PublicLayoutFooterComponent]

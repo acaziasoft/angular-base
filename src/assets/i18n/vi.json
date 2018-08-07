@@ -1,0 +1,12 @@
+{
+  "AUTHENTICATION": {
+    "ACCOUNT": {
+      "REQUIRED" : "Hãy nhập tài khoản!",
+      "MIN_LENGTH" : "Tài khoản có độ dài ít nhất là {{minLength}} ký tự!"
+    },
+    "PASSWORD": {
+      "REQUIRED" : "Hãy nhập password!",
+      "MIN_LENGTH" : "Password có độ dài ít nhất là {{minLength}} ký tự!"
+    }
+  }
+}

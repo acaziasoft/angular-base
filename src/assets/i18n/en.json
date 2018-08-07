@@ -1,0 +1,12 @@
+{
+  "AUTHENTICATION": {
+    "ACCOUNT": {
+      "REQUIRED" : "Account is required!",
+      "MIN_LENGTH" : "Account must be at least {{minLength}} characters long!"
+    },
+    "PASSWORD": {
+      "REQUIRED" : "Password is required!",
+      "MIN_LENGTH" : "Password must be at least {{minLength}} characters long!"
+    }
+  }
+}
