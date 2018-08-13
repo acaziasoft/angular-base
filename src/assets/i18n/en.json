@@ -1,12 +1,29 @@
 {
+  "LABEL": {
+    "BUTTON": {
+      "LOGIN": "Login",
+      "REGISTER": "Register",
+      "RESET": "Reset",
+      "CANCEL": "Cancel",
+      "BACK": "Back",
+      "NEXT": "Next",
+      "CONTINUE": "Continue"
+    }
+  },
   "AUTHENTICATION": {
     "ACCOUNT": {
+      "PLACE_HOLDER": "Email, Phone number or Account NO",
       "REQUIRED" : "Account is required!",
       "MIN_LENGTH" : "Account must be at least {{minLength}} characters long!"
     },
     "PASSWORD": {
+      "PLACE_HOLDER": "Password",
       "REQUIRED" : "Password is required!",
       "MIN_LENGTH" : "Password must be at least {{minLength}} characters long!"
+    },
+    "NOTIFICATION": {
+      "LOGIN_FAILED": "Login failed!",
+      "INVALID_GRANT": "Account or password is invalid."
     }
   }
 }

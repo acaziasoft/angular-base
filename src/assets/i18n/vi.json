@@ -1,12 +1,29 @@
 {
+  "LABEL": {
+    "BUTTON": {
+      "LOGIN": "Đăng nhập",
+      "REGISTER": "Đăng ký",
+      "RESET": "Reset",
+      "CANCEL": "Hủy bỏ",
+      "BACK": "Quay lại",
+      "NEXT": "Tiếp tục",
+      "CONTINUE": "Tiếp tục"
+    }
+  },
   "AUTHENTICATION": {
     "ACCOUNT": {
+      "PLACE_HOLDER": "Email, Số điện thoại hoặc Account NO",
       "REQUIRED" : "Hãy nhập tài khoản!",
       "MIN_LENGTH" : "Tài khoản có độ dài ít nhất là {{minLength}} ký tự!"
     },
     "PASSWORD": {
-      "REQUIRED" : "Hãy nhập password!",
-      "MIN_LENGTH" : "Password có độ dài ít nhất là {{minLength}} ký tự!"
+      "PLACE_HOLDER": "Mật khẩu",
+      "REQUIRED" : "Hãy nhập mật khẩu!",
+      "MIN_LENGTH" : "Mật khẩu có độ dài ít nhất là {{minLength}} ký tự!"
+    },
+    "NOTIFICATION": {
+      "LOGIN_FAILED": "Đăng nhập thất bại!",
+      "INVALID_GRANT": "Tài khoản hoặc mật khẩu không hợp lệ."
     }
   }
 }

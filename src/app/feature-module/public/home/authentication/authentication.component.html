@@ -1,0 +1,36 @@
+<form class="authentication-form">
+  <div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3">
+      <mat-form-field class="full-width">
+        <input matInput required name="login" [(ngModel)]="account.login" #login="ngModel" minlength="4" [placeholder]="'AUTHENTICATION.ACCOUNT.PLACE_HOLDER' | translate" >
+
+        <mat-error *ngIf="!account.login">
+          <span [translate]="'AUTHENTICATION.ACCOUNT.REQUIRED'"></span>
+        </mat-error>
+        <mat-error *ngIf="account.login && account.login.length < loginMinLength">
+          <span [translate]="'AUTHENTICATION.ACCOUNT.MIN_LENGTH'" [translateParams]="{minLength: loginMinLength}"></span>
+        </mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="ui-g">
+    <div class="ui-g-12 ui-md-6 ui-lg-3">
+      <mat-form-field class="full-width">
+        <input matInput required name="password" type="password" [(ngModel)]="account.password" #password="ngModel" minlength="8" [placeholder]="'AUTHENTICATION.PASSWORD.PLACE_HOLDER' | translate">
+        <mat-error *ngIf="!account.password">
+          <span [translate]="'AUTHENTICATION.PASSWORD.REQUIRED'"></span>
+        </mat-error>
+        <mat-error *ngIf="account.password && account.password.length < passwordMinLength">
+          <span [translate]="'AUTHENTICATION.PASSWORD.MIN_LENGTH'" [translateParams]="{minLength: passwordMinLength}"></span>
+        </mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="ui-g button-row">
+    <div class="ui-g-12 ui-md-6 ui-lg-3">
+      <button mat-flat-button color="primary" [disabled]="isAccountInValid()" (click)="authentication()">{{ 'LABEL.BUTTON.LOGIN' | translate }}</button>
+      <button mat-flat-button color="accent" (click)="reset()">{{ 'LABEL.BUTTON.RESET' | translate }}</button>
+    </div>
+  </div>
+</form>
