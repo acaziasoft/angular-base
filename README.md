@@ -1,6 +1,6 @@
 # AngularBase
 
-This project Angular base of Acaziasoft company. Our angular projects will based on this project to development.
+This project Angular base of Acazia Software Company. Our angular projects will based on this project to development.
 
 ## Table of Contents
 * [Architecture overview](#architecture-overview)
