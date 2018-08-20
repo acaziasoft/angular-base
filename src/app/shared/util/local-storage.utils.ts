@@ -9,6 +9,9 @@ export class LocalStorageUtils {
   static saveRefreshToken(refreshToken) {
     LocalStorageUtils.saveValue('refresh_token', refreshToken);
   }
+  static getAccessToken() {
+    return localStorage.getItem('access_token');
+  }
   static isExistAccessToken() {
     return localStorage.getItem('access_token');
   }

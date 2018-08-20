@@ -10,6 +10,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MessageService} from 'primeng/api';
+import {httpInterceptorProviders} from './shared/interceptor';
 
 // AoT requires an exported function for factories
 export function createTranslateLoader(http: HttpClient) {
@@ -35,7 +36,7 @@ export function createTranslateLoader(http: HttpClient) {
     PublicLayoutModule,
     PublicModule,
   ],
-  providers: [MessageService],
+  providers: [MessageService, httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
